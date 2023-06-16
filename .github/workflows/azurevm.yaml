@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+#     branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+#     branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -22,4 +22,14 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-
+    - name: Azure Login
+      uses: Azure/login@v1.4.6
+      with:
+        # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
+        creds: # optional
+        # ClientId of the Azure Service principal created.
+        client-id: # optional
+        # TenantId of the Azure Service principal created.
+        tenant-id: # optional
+        # Azure subscriptionId
+        subscription-id: # optional
