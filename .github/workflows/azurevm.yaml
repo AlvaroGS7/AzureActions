@@ -36,7 +36,7 @@ jobs:
         # ClientId of the Azure Service principal created.
         client-id: ${{secrets.CLIENT_ID}}
         # TenantId of the Azure Service principal created.
-        tenant-id: ${{secrets.TEN_ID}}
+#         tenant-id: ${{secrets.TEN_ID}}
         # Azure subscriptionId
         subscription-id: ${{secrets.SUB_ID}}
         
