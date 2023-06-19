@@ -34,15 +34,15 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3.5.3
         
-#     - name: Replace Tokens
-#       uses: cschleiden/replace-tokens@v1
-#       with:
-#         tokenPrefix: '__'
-#         tokenSuffix: '__'
-#         files: '["**/*.sh"]'
-#       env:
-#         groupName: ${{groupName}}
-#         groupLocation: ${{groupLocation}}
+    - name: Replace Tokens
+      uses: cschleiden/replace-tokens@v1
+      with:
+        tokenPrefix: '__'
+        tokenSuffix: '__'
+        files: '["**/*.sh"]'
+      env:
+        groupName: agonzalez
+        groupLocation: westeurope
         
     - name: Script Testing
       run: cat ResourceGroup.sh
