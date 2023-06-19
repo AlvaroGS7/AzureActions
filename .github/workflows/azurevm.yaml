@@ -29,14 +29,7 @@ jobs:
     - name: Azure Login
       uses: Azure/login@v1.4.6
       with:
-        # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
-        creds: ${{secrets.CRED_SCRT}}
-        # ClientId of the Azure Service principal created.
-        client-id: ${{secrets.CLIENT_ID}}
-        # TenantId of the Azure Service principal created.
-#         tenant-id: ${{secrets.TEN_ID}}
-        # Azure subscriptionId
-        subscription-id: ${{secrets.SUB_ID}}
+        creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SCRT }}","subscriptionId":"${{ secrets.SUB_ID }}","tenantId":"${{ secrets.TEN_ID }}"}'
         
     - name: Checkout
       uses: actions/checkout@v3.5.3
