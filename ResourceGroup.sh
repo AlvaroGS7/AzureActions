@@ -1,5 +1,5 @@
-groupName=${{groupName}}
-groupLocation=${{groupLocation}}
+groupName=${{vars.groupName}}
+groupLocation=${{vars.groupLocation}}
 
 az group create \
     --name $groupName \
