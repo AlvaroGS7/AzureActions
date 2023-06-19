@@ -48,23 +48,19 @@ jobs:
         pubIP: pubip1
         ruleAccessType: Allow
         ruleDestPort: 22
-        ruleDestPrefix: '*'
+        ruleDestPrefix: '"*"'
         ruleDirection: INBOUND
         ruleName: SSHRule
         rulePriority: 101
         ruleProtocol: TCP
-        ruleSourcePort: '*'
-        ruleSourcePrefix: '*'
+        ruleSourcePort: '"*"'
+        ruleSourcePrefix: '"*"'
         sshKeyName: SSHKey
         subnetAddress: 10.0.0.0/24
         vnetAddress: 10.0.0.0/16
         subnetName: subnet1
         vnetName: vnet1
         vmName: vm1
-        
-        
-    - name: Script Testing
-      run: cat ResourceGroup.sh
         
     - name: Azure CLI script file
       uses: azure/CLI@v1
