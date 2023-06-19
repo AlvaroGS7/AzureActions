@@ -54,3 +54,10 @@ jobs:
           inlineScript: |
             chmod +x $GITHUB_WORKSPACE/*.sh
             $GITHUB_WORKSPACE/ResourceGroup.sh
+            $GITHUB_WORKSPACE/vnet.sh
+            $GITHUB_WORKSPACE/pubIP.sh
+            $GITHUB_WORKSPACE/nic.sh
+            $GITHUB_WORKSPACE/nsg.sh
+            $GITHUB_WORKSPACE/nsgRule.sh
+            $GITHUB_WORKSPACE/sshKey.sh
+            $GITHUB_WORKSPACE/vm.sh
