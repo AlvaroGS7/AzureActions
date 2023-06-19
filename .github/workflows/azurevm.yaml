@@ -50,7 +50,7 @@ jobs:
         ruleDestPort: 22
         ruleDestPrefix: "*"
         ruleDirection: INBOUND
-        ruleName: "SSH Rule"
+        ruleName: SSHRule
         rulePriority: 101
         ruleProtocol: TCP
         ruleSourcePort: "*"
