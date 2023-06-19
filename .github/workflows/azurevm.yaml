@@ -48,13 +48,13 @@ jobs:
         pubIP: pubip1
         ruleAccessType: Allow
         ruleDestPort: 22
-        ruleDestPrefix: "*"
+        ruleDestPrefix: '*'
         ruleDirection: INBOUND
         ruleName: SSHRule
         rulePriority: 101
         ruleProtocol: TCP
-        ruleSourcePort: "*"
-        ruleSourcePrefix: "*"
+        ruleSourcePort: '*'
+        ruleSourcePrefix: '*'
         sshKeyName: SSHKey
         subnetAddress: 10.0.0.0/24
         vnetAddress: 10.0.0.0/16
