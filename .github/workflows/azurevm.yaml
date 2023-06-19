@@ -46,7 +46,7 @@ jobs:
         nicName: nic1
         nsgName: nsg1
         pubIP: pubip1
-        ruleAccessType: Internet
+        ruleAccessType: Allow
         ruleDestPort: 22
         ruleDestPrefix: "*"
         ruleDirection: INBOUND
