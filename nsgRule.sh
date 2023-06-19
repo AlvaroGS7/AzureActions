@@ -20,7 +20,7 @@ az network nsg rule create \
     --protocol $ruleProtocol \
     --direction $ruleDirection \
     --priority $rulePriority \
-    --source-address-prefix $ruleSourcePrefix \
+    --source-address-prefix "*" \
     --source-port-range "$ruleSourcePort" \
-    --destination-address-prefix "$ruleDestPrefix" \
-    --destination-port-range "$ruleDestPort"
+    --destination-address-prefix "*" \
+    --destination-port-range "*"
