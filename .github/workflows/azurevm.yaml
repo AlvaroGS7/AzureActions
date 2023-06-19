@@ -43,6 +43,25 @@ jobs:
       env:
         groupName: agonzalez
         groupLocation: westeurope
+        nicName: nic1
+        nsgName: nsg1
+        pubIP: pubip1
+        ruleAccessType: Internet
+        ruleDestPort: 22
+        ruleDestPrefix: "*"
+        ruleDirection: INBOUND
+        ruleName: "SSH Rule"
+        rulePriority: 101
+        ruleProtocol: TCP
+        ruleSourcePort: "*"
+        ruleSourcePrefix: "*"
+        sshKeyName: SSHKey
+        subnetAddress: 10.0.0.0/24
+        vnetAddress: 10.0.0.0/16
+        subnetName: subnet1
+        vnetName: vnet1
+        vmName: vm1
+        
         
     - name: Script Testing
       run: cat ResourceGroup.sh
