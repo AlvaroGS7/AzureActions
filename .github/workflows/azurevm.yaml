@@ -61,6 +61,7 @@ jobs:
         subnetName: subnet1
         vnetName: vnet1
         vmName: vm1
+        vmImage: UbuntuLTS
         
     - name: Azure CLI script file
       uses: azure/CLI@v1
