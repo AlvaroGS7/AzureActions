@@ -42,3 +42,11 @@ jobs:
         tokenPrefix: __
         tokenSuffix: __
         files: "*.sh"
+        
+    - name: Azure CLI script file
+      uses: azure/CLI@v1
+      with:
+          azcliversion: 2.30.0
+          inlineScript: |
+            chmod +x $GITHUB_WORKSPACE/*.sh
+            $GITHUB_WORKSPACE/ResourceGroup.sh
